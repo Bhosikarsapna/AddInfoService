@@ -1,0 +1,31 @@
+
+
+<div class="table-responsive" *ngIf="stdInfo.length > 0; else noStd">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let std of stdInfo; let i = index">
+                  <td>{{i + 1}}</td>
+                  <td>{{std.fname}}</td>
+                  <td>{{std.lname}}</td>
+                  <td>{{std.email}}</td>
+                  <td>{{std.contact}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<ng-template #noStd>
+     <p class="alert alert-danger">
+        No Student Info is Added yet !!!
+     </p>
+</ng-template>

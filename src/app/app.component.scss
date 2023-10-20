@@ -1,0 +1,25 @@
+
+
+.container{
+    border: 2px solid black;
+}
+
+.container.mt-4 {
+    padding: 30px;
+    background-color: slategray;
+    color: white;
+    font-size: 20px;
+    box-shadow: 1px 1px 10px 3px black;
+    text-shadow: 1px 1px 1px white;
+    outline: 5px solid black;
+    outline-offset: 5px;
+}
+
+h1 {
+    background-color: slategray;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+    margin-bottom: 100px;
+}
